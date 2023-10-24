@@ -642,7 +642,7 @@
                         <td colspan="2"><strong>deskripsi_cws</strong><br />' + (feature.properties['deskripsi_cws'] !== null ? autolinker.link(feature.properties['deskripsi_cws'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2"><strong>foto_cws</strong><br />' + (feature.properties['foto_cws'] !== null ? '<img src="foto/' + String(feature.properties['foto_cws']).replace(/[\\\/:]/g, '_').trim() + '">' : '') + '</td>\
+                        <td colspan="2"><strong>foto_cws</strong><br />' + (feature.properties['foto_cws'] !== null ? '<img src="images/' + String(feature.properties['foto_cws']).replace(/[\\\/:]/g, '_').trim() + '">' : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -704,7 +704,7 @@
                         <td colspan="2"><strong>deskripsi_stasiun</strong><br />' + (feature.properties['deskripsi_stasiun'] !== null ? autolinker.link(feature.properties['deskripsi_stasiun'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2"><strong>foto_stasiun</strong><br />' + (feature.properties['foto_stasiun'] !== null ? '<img src="foto/' + String(feature.properties['foto_stasiun']).replace(/[\\\/:]/g, '_').trim() + '">' : '') + '</td>\
+                        <td colspan="2"><strong>foto_stasiun</strong><br />' + (feature.properties['foto_stasiun'] !== null ? '<img src="images/' + String(feature.properties['foto_stasiun']).replace(/[\\\/:]/g, '_').trim() + '">' : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
