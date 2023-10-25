@@ -22,6 +22,7 @@
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+
         <title> Peta Persebaran Stasiun Sepeda dan Co-Working Space </title>
         <script src="Leaflet.NavBar-master/Leaflet.NavBar-master/src/Leaflet.NavBar.css"></script>
 	    <script src="Leaflet.NavBar-master/Leaflet.NavBar-master/src/Leaflet.NavBar.js"></script>
@@ -516,7 +517,7 @@
                         <td colspan="2"><strong>deskripsi_cws</strong><br />' + (feature.properties['deskripsi_cws'] !== null ? autolinker.link(feature.properties['deskripsi_cws'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2"><strong>foto_cws</strong><br />' + (feature.properties['foto_cws'] !== null ? '<img src="https://github.com/YasminMenandaHaliza/YasminMenandaHaliza.github.io/ficcc/images/' + String(feature.properties['foto_cws']).replace(/[\\\/:]/g, '_').trim() + '">' : '') + '</td>\
+                        <td colspan="2"><strong>foto_cws</strong><br />' + (feature.properties['foto_cws'] !== null ? '<img src="https://github.com/YasminMenandaHaliza/YasminMenandaHaliza.github.io/blob/main/ficcc/images/' + String(feature.properties['foto_cws']).replace(/[\\\/:]/g, '_').trim() + '">' : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -578,7 +579,7 @@
                         <td colspan="2"><strong>deskripsi_stasiun</strong><br />' + (feature.properties['deskripsi_stasiun'] !== null ? autolinker.link(feature.properties['deskripsi_stasiun'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2"><strong>foto_stasiun</strong><br />' + (feature.properties['foto_stasiun'] !== null ? '<img src="https://github.com/YasminMenandaHaliza/YasminMenandaHaliza.github.io/ficcc/images/' + String(feature.properties['foto_stasiun']).replace(/[\\\/:]/g, '_').trim() + '">' : '') + '</td>\
+                        <td colspan="2"><strong>foto_stasiun</strong><br />' + (feature.properties['foto_stasiun'] !== null ? '<img src="https://github.com/YasminMenandaHaliza/YasminMenandaHaliza.github.io/blob/main/ficcc/images/' + String(feature.properties['foto_stasiun']).replace(/[\\\/:]/g, '_').trim() + '">' : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
